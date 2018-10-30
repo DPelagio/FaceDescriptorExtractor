@@ -1,5 +1,10 @@
 #include "FaceDescriptorExtractor.h"
 
+FaceDescriptorExtractor::FaceDescriptorExtractor()//Nuestro constructor por default, el cuál se manda a llamar en caso de que no reciba un path y lo carga una sola vez
+{
+    deserialize("../faces/dlib_face_recognition_resnet_model_v1.dat") >> net;//Cargamos nuestro modelo y declaramos nuestra net
+}
+
 FaceDescriptorExtractor::FaceDescriptorExtractor(std::string path)//Nuestro constructor, el cuál recibe el path del modelo entrenado y lo carga una sola vez
 {
     deserialize(path) >> net;//Cargamos nuestro modelo y declaramos nuestra net
