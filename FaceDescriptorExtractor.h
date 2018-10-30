@@ -75,6 +75,7 @@ private:
     anet_type net;
 
 public:
+    FaceDescriptorExtractor();
     FaceDescriptorExtractor(std::string path);
     ~FaceDescriptorExtractor();
     
