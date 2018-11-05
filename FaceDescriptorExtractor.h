@@ -79,9 +79,9 @@ public:
     FaceDescriptorExtractor(std::string path);
     ~FaceDescriptorExtractor();
     
-    matrix<float,0,1> obtenerDescriptorVectorial(cv::Mat &rostro);
+    cv::Mat obtenerDescriptorVectorial(cv::Mat &rostro);
 
-    bool compararDescriptores(dlib::matrix<float,0,1> &rostroReal, dlib::matrix<float,0,1> &rostroBD);
+    bool compararDescriptores(cv::Mat &rostroReal, cv::Mat &rostroBD);
 };
 
 #endif
