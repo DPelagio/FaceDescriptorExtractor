@@ -1,13 +1,13 @@
 # FaceDescriptorExtractor
 Modulo 3 para el reconocimiento facial
 This module will provide functions to extract and compare vectorial descriptors of faces.
-# CLASS
+## CLASS
 
-# Constructor
+### Constructor
   The constructor by default will provide a path to the model already trained that will be used to obtain the face descriptors.
   You can also load the class providing a different path in a string, that contains the file of the model.
   
-# Functions
+### Functions
   1. obtenerDescriptorVectorial(cv::Mat given) : this function will return a cv::Mat that contains the vectorial descriptor that
   represents the face given.
         cv::Mat given - this Mat contains the image that we will analize and obtain the vectorial descriptors.
